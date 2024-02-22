@@ -1,0 +1,6 @@
+<div class="container">
+    <h2>{{ currentJoke.subject }}</h2>
+    <p *ngIf="!currentJoke.hide">{{ currentJoke.punchline }}</p>
+    <button (click)="togglePunchline()">{{ currentJoke.hide ? 'Show Punchline' : 'Hide Punchline' }}</button>
+    <button (click)="getNewJoke()">New Joke</button>
+  </div>
