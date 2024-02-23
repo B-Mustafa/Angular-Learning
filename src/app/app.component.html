@@ -1,5 +1,14 @@
 <p>Hello From /app page</p>
 
+<hr>
+
+<app-user
+ *ngFor="let u of users" [name]="u.name"
+(userClicked)="recivedData($event)"
+></app-user>
+
+
+
 <hr/>
 
 <app-joke></app-joke>
