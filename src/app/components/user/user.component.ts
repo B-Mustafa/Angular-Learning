@@ -1,11 +1,12 @@
 
 import { CommonModule } from '@angular/common';
 import { Component,  EventEmitter,  Input, Output } from '@angular/core';
+import { CountryCodePipe } from '../../pipes/country-code.pipe';
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule , CountryCodePipe],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
@@ -21,5 +22,6 @@ export class UserComponent {
     this.word = "alert";
   }
 
+  phoneNumber = 123456789;
   
 }
