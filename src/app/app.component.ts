@@ -4,12 +4,13 @@ import { RouterOutlet } from '@angular/router';
 import { JokeComponent } from './components/joke/joke.component';
 import { UserComponent } from './components/user/user.component';
 import { CommonModule } from '@angular/common';
+import { CreateBinComponent } from './components/create-bin/create-bin.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet ,  JokeComponent , UserComponent , CommonModule],
+  imports: [RouterOutlet ,  JokeComponent , UserComponent , CommonModule , CreateBinComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
